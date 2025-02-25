@@ -1,3 +1,5 @@
+import { sendForm } from "../services/requests"
+
 export default function forms () {
     const forms = document.querySelectorAll('form')
     const inputs = document.querySelectorAll('input')
@@ -39,24 +41,6 @@ export default function forms () {
         `
         formParent.appendChild(statusMessage)
         return statusMessage
-    }
-
-    async function sendForm (url, data) {
-        try {
-
-            const response = await fetch(url, {
-                method: 'POST',
-                body: data
-            })
-            if(!response.ok) {
-                throw new Error(`Ошибка сервера ${response.status}: ${response.statusText}`)
-            }
-            return await response.text()
-
-        } catch (error) {
-            console.error(`Ошибка отправки ${error}`)
-            throw error
-        }
     }
  
     forms.forEach(form => {
