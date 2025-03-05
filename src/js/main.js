@@ -5,6 +5,7 @@ import forms from "./modules/forms";
 import mask from "./modules/mask";
 import cards from "./modules/cards";
 import calc from "./modules/calc";
+import filter from "./modules/filter";
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     mask()
     cards()
     calc('#size', '#material', '#options', '.promocode', '.calc-price')
+    filter()
    
     const size = document.querySelector('#size')
     size.addEventListener('input', function(){
