@@ -6,6 +6,7 @@ import mask from "./modules/mask";
 import cards from "./modules/cards";
 import calc from "./modules/calc";
 import filter from "./modules/filter";
+import pictureSize from "./modules/pictureSize";
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -18,6 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
     cards()
     calc('#size', '#material', '#options', '.promocode', '.calc-price')
     filter()
+    pictureSize()
+
+    alert('Проверить калькулятор картин')
    
     const size = document.querySelector('#size')
     size.addEventListener('input', function(){
