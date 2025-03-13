@@ -905,10 +905,25 @@ h4 {
 .often-questions .accordion-heading span {
   border-bottom: 2px dotted #333;
 }
+.often-questions .accordion-heading.active-style span {
+  color: #e950d7;
+  font-weight: 900;
+  text-decoration: none;
+  border: none;
+}
 .often-questions .accordion-block {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+.often-questions p.active+.accordion-block {
+  max-height: 500px;
   margin-top: 1rem;
-  background-color: #f7e7e6;
+  opacity: 1;
+  visibility: visible;
   padding: 3rem 4rem;
+  background-color: #f7e7e6;
 }
 .often-questions .accordion-block:before {
   content: '';
