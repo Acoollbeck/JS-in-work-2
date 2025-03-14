@@ -8,6 +8,7 @@ import calc from "./modules/calc";
 import filter from "./modules/filter";
 import pictureSize from "./modules/pictureSize";
 import accordion from "./modules/accordion";
+import burger from "./modules/burger"
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     filter()
     pictureSize()
     accordion()
+    burger('.burger', '.burger-menu')
    
     const size = document.querySelector('#size')
     size.addEventListener('input', function(){
