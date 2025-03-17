@@ -36,6 +36,7 @@
 }
 html {
   font-size: 10px;
+  /* scroll-behavior: smooth */
 }
 body {
   font-family: 'Circe Regular', sans-serif;
@@ -64,6 +65,22 @@ h4 {
 }
 .hidden {
   display: none;
+}
+.pageup {
+  position: fixed;
+  width: 26px ;
+  height: 26px;
+  bottom: 100px;
+  right: 5%;
+  z-index: 30;
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: #fff;
+  transition: 1s all;
+}
+.pageup-hidden {
+  opacity: 0;
+  visibility: hidden
 }
 .p15 {
   font-size: 1.5;

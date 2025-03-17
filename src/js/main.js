@@ -9,6 +9,7 @@ import filter from "./modules/filter";
 import pictureSize from "./modules/pictureSize";
 import accordion from "./modules/accordion";
 import burger from "./modules/burger"
+import scroll from "./modules/scroll";
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -24,7 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     pictureSize()
     accordion()
     burger('.burger', '.burger-menu')
-   
+    scroll()
+
     const size = document.querySelector('#size')
     size.addEventListener('input', function(){
         console.log(size.options[size.selectedIndex].text)
