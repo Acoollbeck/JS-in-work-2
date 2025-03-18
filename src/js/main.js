@@ -10,6 +10,7 @@ import pictureSize from "./modules/pictureSize";
 import accordion from "./modules/accordion";
 import burger from "./modules/burger"
 import scroll from "./modules/scroll";
+import drop from "./modules/drop";
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     accordion()
     burger('.burger', '.burger-menu')
     scroll()
+    drop()
 
     const size = document.querySelector('#size')
     size.addEventListener('input', function(){
